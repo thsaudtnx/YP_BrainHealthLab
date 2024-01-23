@@ -1,0 +1,10 @@
+.container{
+  color: gray;
+  display: flex;
+  flex-direction: row;
+}
+
+.title{
+  font-weight: 600;
+  margin-right: 5px;
+}

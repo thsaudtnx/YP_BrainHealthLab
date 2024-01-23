@@ -1,0 +1,16 @@
+.container{
+  padding-left: 8vw;
+  padding-bottom : 30px;
+  font-size: 11;
+}
+
+.name{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.copyright{
+  margin-top: 15px;
+  font-size: 10;
+  font-weight: 400;
+}
