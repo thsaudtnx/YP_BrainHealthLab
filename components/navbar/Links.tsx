@@ -4,21 +4,17 @@ import styles from './links.module.css';
 
 const links = [
   {
-    title : 'About',
+    title : '연구소 소개',
     path : '/about',
   },
   {
-    title : 'Contact',
+    title : '교육과정',
+    path : '/curriculum',
+  },
+  {
+    title : '고객지원',
     path : '/contact',
   },
-  {
-    title : 'Admin',
-    path : '/admin',
-  },
-  {
-    title : 'Login',
-    path : '/login',
-  }
 ];
 
 const Links = () => {

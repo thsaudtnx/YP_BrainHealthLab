@@ -1,0 +1,46 @@
+.imageContainer{
+  background-color: antiquewhite;
+  width : 100%;
+  height : 400px;
+  font-size: 50px;
+  font-weight: bold;
+  color : gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  padding : 10px;
+  margin-top : 30px;
+  text-align: center;
+  font-size : 30px;
+  font-weight: 700;
+}
+
+.description{
+  text-align: center;
+  font-size : 15px;
+  color : gray;
+}
+
+.background{
+  background-color: beige;
+  width : 100%;
+  height : 500px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top : 50px;
+  margin-bottom : 50px;
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.word{
+  color : red;
+  padding-right : 3px;
+  padding-left: 3px;
+}

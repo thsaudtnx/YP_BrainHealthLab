@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+}
+
+.link{
+  padding : 25px;
+}
+
+.linkActive{
+  border-bottom: 2px solid black;
+}
