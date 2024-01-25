@@ -3,12 +3,16 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import ImageSlider from "@/components/imageSlider/ImageSlider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YP Brain Health Lab",
-  description: "YP Brain Health Lab",
+  title: "YP뇌건강연구소",
+  description: "YP뇌건강연구소",
+  icons: {
+    icon: "/YP-logo.ico",
+  },
 };
 
 export default function RootLayout({
@@ -20,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <ImageSlider />
         {children}
         <Footer />
       </body>

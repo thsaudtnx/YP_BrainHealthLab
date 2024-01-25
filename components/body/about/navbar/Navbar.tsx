@@ -15,6 +15,14 @@ const links = [
     path : '/about/lecturer',
   },
   {
+    title : '교육시설 소개',
+    path : '/about/facility',
+  },
+  {
+    title : '제휴 안내',
+    path : '/about/collaboration',
+  },
+  {
     title : '위치 안내',
     path : '/about/location',
   }

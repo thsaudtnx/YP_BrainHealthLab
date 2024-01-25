@@ -12,9 +12,17 @@ const links = [
     path : '/curriculum',
   },
   {
-    title : '고객지원',
-    path : '/contact',
+    title : '강사 양성과정',
+    path : '/train',
   },
+  {
+    title : '창업과정',
+    path : '/found'
+  },
+  {
+    title : '고객문의',
+    path : '/contact',
+  }
 ];
 
 const Links = () => {
