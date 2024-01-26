@@ -1,6 +1,5 @@
 import React from 'react';
 import NavLink from './NavLink';
-import styles from './links.module.css';
 
 const links = [
   {
@@ -27,7 +26,7 @@ const links = [
 
 const Links = () => {
   return (
-    <div className={styles.container}>
+    <div>
       {links.map(link => (
         <NavLink 
           link={link}
