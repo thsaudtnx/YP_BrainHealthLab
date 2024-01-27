@@ -26,14 +26,14 @@ const links = [
 
 const Links = () => {
   return (
-    <div>
+    <>
       {links.map(link => (
         <NavLink 
           link={link}
           key={link.title}
         />
       ))}
-    </div>
+    </>
   );
 };
 

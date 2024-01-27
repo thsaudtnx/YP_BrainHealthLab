@@ -1,11 +1,11 @@
 .container{
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-left: 50px;
   padding-right: 50px;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logoContainer{
@@ -19,4 +19,25 @@
   font-size: 20px;
   font-weight: bold;
   margin-left : 10px;
+}
+
+.image{
+  width : 30px;
+  height : 30px;
+}
+
+@media (max-width : 400px){
+  .container {
+    padding-left : 30px;
+    padding-right : 30px;
+  }
+
+  .logoName{
+    font-size: 15px;
+  }
+
+  .image{
+    width : 20px;
+    height : 20px;
+  }
 }
