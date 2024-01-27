@@ -18,3 +18,10 @@
 .linkActive{
   border-bottom: 3px solid gray;
 }
+
+@media (max-width : 992px) {
+  .links{
+    display: flex;
+    flex-direction: column;
+  }
+}
