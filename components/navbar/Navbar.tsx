@@ -7,6 +7,7 @@ import Links from './Links';
 import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 import Dropbox from './Dropbox';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
 
@@ -14,6 +15,10 @@ const Navbar = () => {
     query: "(max-width:992px)",
   });
   const [show, setShow] = useState(false);
+  const pathName = usePathname();
+  if (pathName.split('/')[1] === 'login'){
+    return (<></>);
+  }
   
   return (
     <div className={styles.container}>

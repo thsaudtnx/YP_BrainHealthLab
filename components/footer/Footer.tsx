@@ -1,8 +1,17 @@
+'use client'
+
 import React from 'react';
 import styles from './footer.module.css';
 import Contents from './Contents';
+import { usePathname } from 'next/navigation';
 
 const Footer = () => {
+
+  const pathName = usePathname();
+  if (pathName.split('/')[1] === 'login'){
+    return (<></>);
+  }
+
   return (
     <div className={styles.container}>
       <h1 className={styles.name}>

@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react';
-import NavLink from './NavLink';
+import Link from 'next/link';
+import styles from './links.module.css';
 
 const links = [
   {
@@ -10,29 +13,37 @@ const links = [
     title : '교육과정',
     path : '/curriculum',
   },
-  {
-    title : '강사 양성과정',
-    path : '/train',
-  },
-  {
-    title : '창업과정',
-    path : '/found'
-  },
-  {
-    title : '고객문의',
-    path : '/contact',
-  }
 ];
 
 const Links = () => {
+  // Contact Button Handler
+  const handleButtonClick = () => {
+    const email = 'messidona3589@gmail.com';
+    const mailtoUrl = `mailto:${email}`;
+    window.location.href = mailtoUrl;
+  };
   return (
     <>
-      {links.map(link => (
-        <NavLink 
-          link={link}
-          key={link.title}
-        />
+      {links.map((link, index) => (
+        <Link
+          key={index}
+          href={link.path}
+          className={styles.link}
+        >
+          {link.title}
+        </Link>
       ))}
+      <button 
+        className={styles.link}
+        onClick={handleButtonClick}>
+        고객문의
+      </button>
+      <Link
+        className={`${styles.link} ${styles.login}`}
+        href='/login'
+      >
+        로그인
+      </Link>
     </>
   );
 };

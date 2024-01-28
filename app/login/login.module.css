@@ -1,0 +1,88 @@
+.container{
+  width : 100vw;
+  height : 100vh;
+  background-color: #328a5a;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  padding : 30px;
+}
+
+.header{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom : 100px;
+}
+
+.logoContainer{
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoName{
+  margin-left : 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color : white;
+}
+
+.description{
+  color : white;
+  font-size: 12px;
+}
+
+.methods{
+  margin-bottom : 50px;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.method{
+  background-color: white;
+  max-width : 500px;
+  width : 80vw;
+  border-radius: 60px;
+  padding : 10px;
+  color : black;
+  margin-bottom : 15px;
+  display : flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.method:hover{
+  cursor: pointer;
+}
+
+.logo{
+  padding-left : 5px;
+}
+
+.words{
+  color : white;
+}
+
+.wordsHeader{
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerWord{
+  font-weight: bold;
+  padding : 10px;
+}
+
+.wordsDescription{
+  font-size: 12px;
+}

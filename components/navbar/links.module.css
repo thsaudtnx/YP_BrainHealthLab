@@ -1,0 +1,29 @@
+.link{
+  min-width: 100px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login{
+  border: 2px solid #51c282;
+  border-radius: 10px;
+  color : #51c282;
+  padding-left : 15px;
+  padding-right : 15px;
+}
+
+.login:hover{
+  border : 2px solid white;
+  background-color: #51c282;
+  color : white;
+}
+
+@media (max-width : 400px) {
+  .link{
+    padding: 5px;
+    margin: 5px;
+    font-size : 12px;
+  }
+}
