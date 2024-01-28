@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import styles from './phone.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PhonePage = () => {
 
@@ -88,9 +89,9 @@ const PhonePage = () => {
             </div>
           </div>
           <div className={styles.forgot}>
-            <button>
+            <Link href='/login/forgot'>
               비밀번호를 잊으셨나요?
-            </button>
+            </Link>
           </div>
         </div>
         <div className={styles.buttonContainer}>
@@ -101,9 +102,12 @@ const PhonePage = () => {
             로그인
           </button>
           <div className={styles.register}>
-            <button>
-              아직 계정이 없으신가요? 회원가입
-            </button>
+            <Link href='/login/register'>
+              아직 계정이 없으신가요? 
+              <span className={styles.registerButton}>
+                회원가입
+              </span>
+            </Link>
           </div>
         </div>
       </div>
